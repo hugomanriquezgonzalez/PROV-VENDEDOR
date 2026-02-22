@@ -1,0 +1,83 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PROV Mayorista - Gestión de Ventas</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8fafc;
+            margin: 0;
+            padding: 0;
+            -webkit-font-smoothing: antialiased;
+        }
+        #root {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+        .chile-flag {
+            background: linear-gradient(to bottom, #fff 50%, #d52b1e 50%);
+            position: relative;
+            width: 24px;
+            height: 16px;
+        }
+        .chile-flag::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 33%;
+            height: 50%;
+            background: #0039a6;
+        }
+        .animate-in {
+            animation: fadeIn 0.4s ease-out forwards;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(8px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        /* Custom scrollbar para navegadores web */
+        ::-webkit-scrollbar {
+            width: 8px;
+            height: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #f1f5f9;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #cbd5e1;
+            border-radius: 10px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #94a3b8;
+        }
+    </style>
+<script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@18.2.0",
+    "react/": "https://esm.sh/react@18.2.0/",
+    "react-dom": "https://esm.sh/react-dom@18.2.0",
+    "react-dom/": "https://esm.sh/react-dom@18.2.0/",
+    "react-dom/client": "https://esm.sh/react-dom@18.2.0/client",
+    "react-router-dom": "https://esm.sh/react-router-dom@6.22.3?external=react,react-dom",
+    "recharts": "https://esm.sh/recharts@2.12.2?external=react,react-dom",
+    "@google/genai": "https://esm.sh/@google/genai@1.3.0"
+  }
+}
+</script>
+<script type="module" src="./index.tsx"></script>
+</head>
+<body>
+    <div id="root"></div>
+</body>
+</html>

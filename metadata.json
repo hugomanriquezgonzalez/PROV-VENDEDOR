@@ -1,0 +1,7 @@
+{
+  "name": "PROV Vendedor ",
+  "description": "Plataforma integral de gestión mayorista para administradores y vendedores de Distribuidora Central S.A.",
+  "requestFramePermissions": [
+    "camera"
+  ]
+}
